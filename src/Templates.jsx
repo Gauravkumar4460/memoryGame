@@ -66,6 +66,7 @@ function GridItem({onclick,id}){
                 const response = await fetch(url);
                 const data = await response.json();
                 setGifItem(data.data);
+                console.log(data.data);
             }catch(error) {
                 console.log('Error fetching data from Giphy!!',error);
             }
