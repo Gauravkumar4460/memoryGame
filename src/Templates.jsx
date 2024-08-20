@@ -58,7 +58,7 @@ function GridItem({onclick,id}){
 
     useEffect(()=> {
         async function getGif() {
-            const apiKey = 'pt9zzC7YCIQ29j2o5ALyKtpoBY1HpAd6'; 
+            const apiKey = '5OLXZKzOpuAYKAsVWMv7JqNHrkyybQ6u'; 
             const limit = 16;
             const query = 'black butler';
             const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${encodeURIComponent(query)}&limit=${limit}&rating=g`;
