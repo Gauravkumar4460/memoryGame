@@ -9,6 +9,7 @@ lerna-debug.log*
 
 node_modules
 src/Templates.jsx
+dist/assets/index-DRvoLiDv.js
 *.local
 
 # Editor directories and files
