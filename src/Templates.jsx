@@ -58,7 +58,11 @@ function GridItem({onclick,id}){
 
     useEffect(()=> {
         async function getGif() {
+<<<<<<< HEAD
             const apiKey = '7Ag9E6IefsvOA6Ry4TedcdxOOTWjcKS8'; 
+=======
+            const apiKey = 'UgRR4FqbrAMQcBGNXlJ6AsWKXeXNEbZZ';
+>>>>>>> 8ce1a34cdd99b40b923be8d78aad2ae94388d608
             const limit = 16;
             const query = 'black butler';
             const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${encodeURIComponent(query)}&limit=${limit}&rating=g`;
@@ -66,6 +70,10 @@ function GridItem({onclick,id}){
                 const response = await fetch(url);
                 const data = await response.json();
                 setGifItem(data.data);
+<<<<<<< HEAD
+=======
+               
+>>>>>>> 8ce1a34cdd99b40b923be8d78aad2ae94388d608
             }catch(error) {
                 console.log('Error fetching data from Giphy!!',error);
             }
