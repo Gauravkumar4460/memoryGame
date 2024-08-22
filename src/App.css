@@ -27,9 +27,12 @@
   scale: 1.008;
 }
 
-.pointsShow{
+.showPoints{
   margin-left: 1150px;
   margin-top: -50px;
+  color: darkgoldenrod;
+  font-size: 25px;
+  margin-bottom: 30px;
 }
 .firstHeading{
   margin-left: 10px;

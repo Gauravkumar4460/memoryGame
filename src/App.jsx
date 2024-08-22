@@ -20,6 +20,14 @@ function App({onClick}) {
         addImageId(e.target.id);
       }
     }
+    if(counter === 16){
+      return (
+        <div style={{fontFamily:'cursive',fontSize:'xx-larger',display:'flex', flexDirection:'column', gap:'50px', justifyContent:'center', alignItems:'center', backgroundColor:'beige', width:'80vw', height:'80vh',margin:'50px auto'}}>
+        <h1 style={{fontFamily:'cursive', fontSize:'xx-larger'}}>Congratulations!, You are Memory Master!!</h1>
+        <button onClick={onClick} className='playAgain-button'> play Again </button>
+        </div>
+      )
+    }
     if(gameOver){
       return (
         <div style={{fontFamily:'cursive',fontSize:'xx-larger',display:'flex', flexDirection:'column', gap:'50px', justifyContent:'center', alignItems:'center', backgroundColor:'beige', width:'80vw', height:'80vh',margin:'50px auto'}}>
